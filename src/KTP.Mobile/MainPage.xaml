@@ -1,0 +1,12 @@
+﻿<ContentPage xmlns:local="clr-namespace:KTP"
+             xmlns:shared="clr-namespace:KTP.Shared;assembly=KTP.Shared"
+             x:Class="KTP.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView.RootComponents>
+            <RootComponent Selector="#app" ComponentType="{x:Type shared:Routes}" />
+        </BlazorWebView.RootComponents>
+    </BlazorWebView>
+
+</ContentPage>

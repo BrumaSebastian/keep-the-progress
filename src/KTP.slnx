@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="KTP.Shared/KTP.Shared.csproj" />
+  <Project Path="KTP.Web.Client/KTP.Web.Client.csproj" />
+  <Project Path="KTP.Web/KTP.Web.csproj" />
+  <Project Path="KTP.Mobile/KTP.Mobile.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
