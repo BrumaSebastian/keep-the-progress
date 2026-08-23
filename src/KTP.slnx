@@ -1,8 +1,15 @@
 <Solution>
-  <Project Path="KTP.Shared/KTP.Shared.csproj" />
-  <Project Path="KTP.Web.Client/KTP.Web.Client.csproj" />
-  <Project Path="KTP.Web/KTP.Web.csproj" />
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="KTP.API/KTP.API.csproj" Id="7ff0150b-285e-4432-a88f-197629beb2f0" />
+  <Project Path="KTP.Application/KTP.Application.csproj" Id="19f76632-e932-405c-bbef-187388243d22" />
+  <Project Path="KTP.Domain/KTP.Domain.csproj" Id="ce89eae8-446a-42ee-9c5d-aa449ed5e02b" />
+  <Project Path="KTP.Infrastructure/KTP.Infrastructure.csproj" Id="d100068b-d8b4-4d10-a606-87bc336248fd" />
   <Project Path="KTP.Mobile/KTP.Mobile.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="KTP.Shared/KTP.Shared.csproj" />
+  <Project Path="KTP.Web.Client/KTP.Web.Client.csproj" />
+  <Project Path="KTP.Web/KTP.Web.csproj" />
 </Solution>
