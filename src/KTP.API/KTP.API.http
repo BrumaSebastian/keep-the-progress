@@ -1,0 +1,11 @@
+@KTP.API_HostAddress = http://localhost:5056
+
+GET {{KTP.API_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+
+GET {{KTP.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
