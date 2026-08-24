@@ -14,7 +14,7 @@ public sealed class TaskDay : Entity, IModificationMetadata
 
     // Navigation Properties
     public Guid TaskId { get; set; }
-    public Task Task { get; set; }
+    public required Task Task { get; set; }
     public ICollection<PlanItem> PlanItems { get; set; } = [];
     public ICollection<Note> Notes { get; set; } = [];
 }

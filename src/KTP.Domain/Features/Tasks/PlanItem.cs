@@ -5,7 +5,7 @@ namespace KTP.Domain.Features.Tasks;
 public sealed class PlanItem : Entity, IModificationMetadata
 {
     // Content
-    public string Text { get; set; }
+    public required string Text { get; set; }
     public int SortOrder { get; set; }
     public bool IsCompleted { get; set; }
 
@@ -15,5 +15,5 @@ public sealed class PlanItem : Entity, IModificationMetadata
 
     // Navigation Properties
     public Guid TaskDayId { get; set; }
-    public TaskDay TaskDay { get; set; }
+    public required TaskDay TaskDay { get; set; }
 }
