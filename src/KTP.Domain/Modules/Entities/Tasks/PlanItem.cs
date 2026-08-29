@@ -1,6 +1,6 @@
 using KTP.Domain.Base;
 
-namespace KTP.Domain.Features.Tasks;
+namespace KTP.Domain.Modules.Entities.Tasks;
 
 public sealed class PlanItem : Entity, IModificationMetadata
 {
@@ -14,6 +14,6 @@ public sealed class PlanItem : Entity, IModificationMetadata
     public DateTime? UpdatedAtUtc { get; set; }
 
     // Navigation Properties
-    public Guid TaskDayId { get; set; }
-    public required TaskDay TaskDay { get; set; }
+    public Guid ToDoItemDayId { get; set; }
+    public required ToDoItemDay ToDoItemDay { get; set; }
 }

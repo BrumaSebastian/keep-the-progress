@@ -60,12 +60,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Resources\Raw\appsettings.Development.json" />
+    <Content Remove="Resources\Raw\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="11.0.0-preview.6.*" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KTP.Infrastructure\KTP.Infrastructure.csproj" />
     <ProjectReference Include="..\KTP.Shared\KTP.Shared.csproj" />
   </ItemGroup>
 

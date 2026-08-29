@@ -1,8 +1,8 @@
 using KTP.Domain.Base;
 
-namespace KTP.Domain.Features.Tasks;
+namespace KTP.Domain.Modules.Entities.Tasks;
 
-public sealed class Task : Entity, IAuditMetadata
+public sealed class ToDoItem : Entity, IAuditMetadata
 {
     public required string Name { get; set; }
     public string? Description { get; set; }
@@ -13,5 +13,5 @@ public sealed class Task : Entity, IAuditMetadata
     public DateTime? DeletedAtUtc { get; set; }
 
     // Navigation Propeties
-    public ICollection<TaskDay> TaskDays { get; set; } = [];
+    public ICollection<ToDoItemDay> ToDoItemDays { get; set; } = [];
 }
