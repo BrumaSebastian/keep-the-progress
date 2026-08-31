@@ -1,4 +1,4 @@
-﻿namespace KTP.Domain.Features.Tasks.Enums;
+﻿namespace KTP.Domain.Modules.Entities.Tasks.Enums;
 
 public enum TaskDayStatus
 {

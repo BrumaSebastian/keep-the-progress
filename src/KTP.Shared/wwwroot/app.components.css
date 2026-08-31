@@ -1,0 +1,18 @@
+﻿.nav-icon {
+    background-color: #888888;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+.nav-link {
+    /* When hovering the parent OR when the parent is active */
+    &:hover,
+    &.active {
+        .nav-icon {
+            background-color: var(--active-color, #888888);
+        }
+    }
+
+    &.active {
+        font-weight: bold;
+    }
+}

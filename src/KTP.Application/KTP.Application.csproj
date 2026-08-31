@@ -4,11 +4,17 @@
     <TargetFramework>net11.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Base\" />
-    <Folder Include="Features\" />
+    <Folder Include="Models\Requests\Tasks\Notes\" />
+    <Folder Include="Models\Requests\Tasks\PlanItems\" />
+    <Folder Include="Models\Requests\Tasks\ToDoItemDays\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.11" />
   </ItemGroup>
 
 </Project>

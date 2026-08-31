@@ -1,0 +1,57 @@
+
+[class*="w-"] {
+    width: calc(var(--spacing) * var(--w-factor, 1));
+}
+
+.w-1 {
+    --w-factor: 1;
+}
+
+.w-2 {
+    --w-factor: 2;
+}
+
+.w-3 {
+    --w-factor: 3;
+}
+
+.w-4 {
+    --w-factor: 4;
+}
+
+.w-5 {
+    --w-factor: 5;
+}
+
+.w-10 {
+    --w-factor: 10;
+}
+
+
+[class*="h-"] {
+    height: calc(var(--spacing) * var(--h-factor, 1));
+}
+
+.h-1 {
+    --h-factor: 1;
+}
+
+.h-2 {
+    --h-factor: 2;
+}
+
+.h-3 {
+    --h-factor: 3;
+}
+
+.h-4 {
+    --h-factor: 4;
+}
+
+.h-5 {
+    --h-factor: 5;
+}
+
+.h-10 {
+    --h-factor: 10;
+}

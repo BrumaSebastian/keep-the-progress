@@ -11,9 +11,14 @@
 ## Architecture Boundaries
 
 *   **Monorepo Structure:** The solution uses a monorepo approach across three main areas:
-    *   **`KTP.Shared/`**: Core shared code, common UI components, and interfaces (e.g., `IFormFactor.cs`).
-    *   **`KTP.Web.Client/`**: Blazor WebAssembly SPA client application.
-    *   **`KTP.Mobile/`**: The main .NET MAUI project/launcher.
+    *   **`src/KTP.Shared/`**: Core shared code, common UI components, and interfaces (e.g., `IFormFactor.cs`).
+    *   **`src/KTP.Web.Client/`**: Blazor WebAssembly SPA client application.
+    *   **`src/KTP.Web/`**: Frontend components and views for the main website.
+    *   **`src/KTP.API/`**: The backend API services.
+    *   **`src/KTP.Domain/`**: Core business entities and domain models.
+    *   **`src/KTP.Application/`**: Business logic implementation (use cases, services).
+    *   **`src/KTP.Infrastructure/`**: Persistence, external service integrations, and repositories.
+    *   **`src/KTP.Mobile/`**: The main .NET MAUI project/launcher.
 *   **Entry Point:** The application lifecycle starts in the `MauiProgram.cs` found in `KTP.Mobile/`.
 *   **Navigation:** Use `maui-shell-navigation` (via `Shell.Current.GoToAsync`) for all cross-page navigation.
 *   **Data Flow:** Shared services are consumed via constructor injection in `MauiProgram.cs` (use `maui-dependency-injection`).

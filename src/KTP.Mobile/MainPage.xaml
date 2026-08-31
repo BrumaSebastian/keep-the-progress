@@ -1,7 +1,8 @@
 ﻿<ContentPage xmlns:local="clr-namespace:KTP"
              xmlns:shared="clr-namespace:KTP.Shared;assembly=KTP.Shared"
              x:Class="KTP.MainPage"
-             BackgroundColor="{DynamicResource PageBackgroundColor}">
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             SafeAreaEdges="All">
 
     <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
         <BlazorWebView.RootComponents>
