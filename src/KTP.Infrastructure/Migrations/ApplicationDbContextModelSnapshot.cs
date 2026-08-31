@@ -41,7 +41,7 @@ namespace KTP.Infrastructure.Migrations
 
                     b.HasIndex("ToDoItemDayId");
 
-                    b.ToTable("Notes");
+                    b.ToTable("Notes", (string)null);
                 });
 
             modelBuilder.Entity("KTP.Domain.Modules.Entities.Tasks.PlanItem", b =>
@@ -77,7 +77,7 @@ namespace KTP.Infrastructure.Migrations
 
                     b.HasIndex("ToDoItemDayId");
 
-                    b.ToTable("PlanItems");
+                    b.ToTable("PlanItems", (string)null);
                 });
 
             modelBuilder.Entity("KTP.Domain.Modules.Entities.Tasks.ToDoItem", b =>
@@ -109,7 +109,7 @@ namespace KTP.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ToDoItems");
+                    b.ToTable("ToDoItems", (string)null);
                 });
 
             modelBuilder.Entity("KTP.Domain.Modules.Entities.Tasks.ToDoItemDay", b =>
@@ -142,7 +142,7 @@ namespace KTP.Infrastructure.Migrations
 
                     b.HasIndex("ToDoItemId");
 
-                    b.ToTable("ToDoItemDays");
+                    b.ToTable("ToDoItemDays", (string)null);
                 });
 
             modelBuilder.Entity("KTP.Domain.Modules.Entities.Tasks.Note", b =>
